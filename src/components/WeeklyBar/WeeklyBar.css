@@ -1,22 +1,114 @@
-.father-container {
+father-container {
     width: 100%;
+    color: #fff;
 }
 
 .global{
-    width: 10%;
+    width: 100%; /* Adjusted from 10% for demonstration */
     padding-left: 10px;
     display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;  /* Ensuring it takes the full width */
 }
 
 .marker{
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
 .grades{
     display: flex;
+    height: 15rem;
+    margin-bottom: -10px; /* Add negative margin to bring closer */
 }
 
 .grades h2{
-    flex: 1
+    flex: 1;
+    font-size: 9rem;
+}
+
+.grades h2 sub{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+.min-max {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px; /* Add negative margin to bring closer */
+}
+
+.min-max .min{
+    display: flex;
+}
+
+.min-max .min .text {
+    flex: 1;
+}
+
+.min-max .min .number{
+    flex: 2;
+}
+
+.min-max .max{
+    display: flex;
+}
+
+.min-max .max .text {
+    flex: 1;
+}
+
+.min-max .max .number{
+    flex: 2;
+}
+
+.days{
+    flex: 2;
+    height: 5rem;
+    text-align: right; 
+    margin-right: 2rem;
+}
+
+.days h2{
+    font-size: 8rem;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.down > div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.down > div:hover {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.down .selected {
+    background: rgba(255, 255, 255, 0.3);
 }
