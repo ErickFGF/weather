@@ -1,0 +1,22 @@
+.father-container {
+    width: 100%;
+}
+
+.global{
+    width: 10%;
+    padding-left: 10px;
+    display: flex;
+}
+
+.marker{
+    display: flex;
+    flex-direction: column;
+}
+
+.grades{
+    display: flex;
+}
+
+.grades h2{
+    flex: 1
+}
